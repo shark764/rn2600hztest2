@@ -1,0 +1,12 @@
+{
+  "name": "rn2600hztest2",
+  "displayName": "rn2600hztest2",
+  "expo": {
+    "name": "rn2600hztest2",
+    "slug": "rn2600hztest2",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
