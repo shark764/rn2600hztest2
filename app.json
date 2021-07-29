@@ -5,8 +5,6 @@
     "name": "rn2600hztest2",
     "slug": "rn2600hztest2",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"]
   }
 }

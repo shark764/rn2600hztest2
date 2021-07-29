@@ -1,0 +1,19 @@
+# .prettierignore
+
+node_modules/**
+.env
+public
+static
+dist
+
+.swp
+.DS_Store
+yarn-error.log
+
+ios/**
+android/**
+
+.expo/**
+
+build
+coverage
