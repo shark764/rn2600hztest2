@@ -33,7 +33,7 @@
     "strict": true,
     "target": "esnext"
   },
-  "include": ["**/*.js", "**/*.ts", "./*", "./**/*", "./src", "./src/types/custom.d.ts", ".eslintrc.js"],
+  "include": ["**/*.js", "**/*.ts", "./*", "./**/*", "./src", ".eslintrc.js"],
   "exclude": [
     "__tests__/**/*-test.ts",
     "babel.config.js",

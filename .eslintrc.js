@@ -38,6 +38,7 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/member-delimiter-style': [
       'error',
       {
@@ -102,7 +103,8 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
-    indent: ['error', 2],
+    indent: 'off',
+    'jsx-quotes': ['error', 'prefer-double'],
     'linebreak-style': ['error', 'unix'],
     'max-len': [
       'warn',
@@ -153,6 +155,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/display-name': 'off',
+    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'react/jsx-filename-extension': [
       1,
       {

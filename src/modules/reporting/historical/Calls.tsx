@@ -11,11 +11,11 @@ interface Props {
 
 export const Calls = (props: Props) => (
   <View>
-    <Text>{props.id}</Text>
+    {/* <Text>{props.id}</Text>
     <Text>{props.phone}</Text>
     <Voice isActive />
     <BasicRoot ext="in" />
-    <BasicRoot ext="out" />
+    <BasicRoot ext="out" /> */}
     <StyledExample prop1="Hello World" />
   </View>
 );
