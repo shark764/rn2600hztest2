@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { Voice } from './components/reporting/historical/Voice';
 
 interface Props {
@@ -9,8 +9,6 @@ interface Props {
 export const BasicRoot = (props: Props) => (
   <View>
     <Text>{props.ext.toUpperCase()}</Text>
-    <Voice isActive={false} />
+    <Voice isActive={props.ext === 'in'} />
   </View>
 );
-
-const styles = StyleSheet.create({});

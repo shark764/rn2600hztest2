@@ -4,6 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "isolatedModules": true,
@@ -12,6 +13,10 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "paths": {
       "@/*": ["src/*"],
       "@app/*": ["app/*"],
@@ -21,12 +26,24 @@
       "@styles/*": ["src/styles/*"],
       "tests": ["tests/*"]
     },
+    "preserveConstEnums": true,
     "removeComments": true,
     "skipLibCheck": false,
+    "sourceMap": true,
     "strict": true,
     "target": "esnext"
   },
-  "include": ["./src", "**/*.ts", "**/*.js", "./**/*", "./*", ".eslintrc.js"],
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js", "__tests__/**/*-test.ts"],
-  "extends": "expo/tsconfig.base"
+  "include": ["**/*.js", "**/*.ts", "./*", "./**/*", "./src", "./src/types/custom.d.ts", ".eslintrc.js"],
+  "exclude": [
+    "__tests__/**/*-test.ts",
+    "babel.config.js",
+    "build",
+    "coverage",
+    "jest.config.js",
+    "metro.config.js",
+    "node_modules"
+  ],
+  "extends": "expo/tsconfig.base",
+  "filesGlob": ["typings/index.d.ts", "src/**/*.ts", "src/**/*.tsx", "node_modules/typescript/lib/lib.es6.d.ts"],
+  "types": ["react", "react-dom", "react-native", "react-test-renderer", "jest"]
 }
