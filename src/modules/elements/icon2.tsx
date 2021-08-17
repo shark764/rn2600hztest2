@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Dimensions, Slider, Text, View } from 'react-native';
 import Svg, { SvgXml, Circle, Defs, G, Rect, Use, Symbol, Path } from 'react-native-svg';
+import LibraryTest from 'rn-library-test-aug17';
 import Icons from '@/components/icons/icons.svg';
 import DragonSvg from '@/components/icons/dragon.svg';
 import Autocode from '@/components/icons/logos/autocode.svg';
@@ -174,6 +175,8 @@ export const Icon2: React.FunctionComponent<Icon2Props> = () => {
         </SvgFlame>
       </View>
 
+      <LibraryTest.Button onPress={() => console.log('Hello you son of a thousand bitches!')} title="Hey you MF" />
+
       {/* <SvgXml height={40} width={120} fill="#5901cd" xml={Bower} /> */}
       {/* <SvgXml height={40} width={120} fill="#5901cd" xml={Drupal} /> */}
       {/* <SvgXml height={40} width={180} fill="blue" xml={DragonSvg} /> */}
@@ -238,6 +241,8 @@ export const Icon2: React.FunctionComponent<Icon2Props> = () => {
       </View>
 
       <Slider step={1} minimumValue={1} maximumValue={colors.length} onValueChange={setIndex} style={styles.slider} />
+
+      <LibraryTest.Button onPress={() => setIndex((idx) => idx + 1)} title="Ohhh Shiiiit" />
 
       <Svg height="100" width="110">
         <Symbol id="symbol" viewBox="0 0 150 110" width="100" height="50">

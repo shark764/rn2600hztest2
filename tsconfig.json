@@ -41,6 +41,7 @@
     "coverage",
     "jest.config.js",
     "metro.config.js",
+    "webpack.config.js",
     "node_modules"
   ],
   "extends": "expo/tsconfig.base",

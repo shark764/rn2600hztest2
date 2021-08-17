@@ -1,3 +1,10 @@
+const path = require('path');
+const pak = require('../rn-library-test-aug17/package.json');
+// const pak = {
+//   name: 'rn-library-test-aug17',
+//   source: 'src/index',
+// };
+
 module.exports = function (api) {
   api.cache(true);
   return {
@@ -16,6 +23,9 @@ module.exports = function (api) {
             '@modules': './src/modules',
             '@styles': './src/styles',
             tests: ['./tests/'],
+
+            // For development, we want to alias the library to the source
+            [pak.name]: path.join(__dirname, '..', pak.name, pak.source),
           },
         },
       ],
