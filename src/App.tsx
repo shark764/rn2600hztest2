@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, Button } from 'react-native';
-import LibraryTest, { Button as Button2 } from 'rn-library-test-aug17';
+import { StyleSheet, View, SafeAreaView, ScrollView } from 'react-native';
+import LibraryTest, { Button, TextInfo } from 'rn-library-test-aug17';
 import { Calls } from './modules/reporting/historical/Calls';
 
 export function App () {
@@ -13,10 +13,16 @@ export function App () {
 
   const runMultiply = () => {
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
     LibraryTest.multiply(3, 7).then(setResult);
   };
 
   const runDivide = () => {
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
     LibraryTest.divide(3, 7).then(setResult);
   };
@@ -25,10 +31,12 @@ export function App () {
     <SafeAreaView>
       <ScrollView>
         <View style={styles.container}>
-          <Text>Result: {result}</Text>
-          <Button2 onPress={runDivide} title="Divide this shit!" />
+          <TextInfo color="blue" size="large">
+            Result: {result}
+          </TextInfo>
+          <Button onPress={runDivide} title="Divide this shit!" />
 
-          <Button2 onPress={runMultiply} title="Multiply this shit!" color="#967d12" />
+          <Button onPress={runMultiply} title="Multiply this shit!" color="#967d12" />
         </View>
 
         <View style={styles.container}>
