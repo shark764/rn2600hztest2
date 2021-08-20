@@ -8,14 +8,19 @@ const escape = require('escape-string-regexp');
 // remove the @ (see: https://blog.expo.io/expo-sdk-41-12cc5232f2ef)
 const { getDefaultConfig } = require('expo/metro-config');
 
-const pak = require('../rn-library-test-aug17/package.json');
+// const pak = require('../rn-library-test-aug17/package.json');
+const pak = require('../sds-react-native-components/package.json');
 // const pak = {
 //   peerDependencies: {
 //     react: '*',
 //     'react-native': '*',
+//     'react-native-svg': '*',
 //   },
 // };
-const root = path.resolve(__dirname, '..', 'rn-library-test-aug17');
+// sds-react-native-components
+// const root = path.resolve(__dirname, '..', 'rn-library-test-aug17');
+const dirName = pak.name.split('/')[1];
+const root = path.resolve(__dirname, '..', dirName);
 
 const modules = Object.keys({
   ...pak.peerDependencies,

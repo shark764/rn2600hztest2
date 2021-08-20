@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Dimensions, Slider, Text, View } from 'react-native';
+import { Button, Dimensions, Slider, Text, View } from 'react-native';
 import Svg, { SvgXml, Circle, Defs, G, Rect, Use, Symbol, Path } from 'react-native-svg';
-import LibraryTest, { Button } from 'rn-library-test-aug17';
+import { Telicon } from '@2600hz/sds-react-native-components';
 import Icons from '@/components/icons/icons.svg';
 import DragonSvg from '@/components/icons/dragon.svg';
 import Autocode from '@/components/icons/logos/autocode.svg';
@@ -19,7 +19,7 @@ import SymbolExample from '@/components/icons/symbol-example.svg';
 import SymbolExample2 from '@/components/icons/symbol-example2.svg';
 import Award from '@/components/icons/award.svg';
 import Planet from '@/components/Planet';
-import Telicon from '../telicon/Telicon';
+// import Telicon from '../telicon/Telicon';
 import SvgFlame from '../SvgFlame';
 
 const { width } = Dimensions.get('window');
@@ -141,7 +141,7 @@ export const Icon2: React.FunctionComponent<Icon2Props> = () => {
   return (
     <View>
       <View style={styles.row}>
-        <Telicon name="star" size="default" fill={primaryColor} fillSecondary={secondaryColor} />
+        <Telicon name="star" size="large" fill={primaryColor} fillSecondary={secondaryColor} />
       </View>
 
       <View style={styles.row}>

@@ -17,6 +17,7 @@ module.exports = {
       { convertColors: false },
       { cleanupNumericValues: false },
       { mergePaths: false },
+      { prefixIds: false },
       { removeAttrs: true },
       { removeTitle: false },
       { removeDesc: false },

@@ -24,10 +24,10 @@ yarn
 ## Usage
 
 Add symlink
-See [Linked library](https://github.com/shark764/rn-library-test-aug17)
+See [Linked library](https://github.com/shark764/@2600hz/sds-react-native-components)
 
 ```bash
-yarn link rn-library-test-aug17
+yarn link @2600hz/sds-react-native-components
 ```
 
 ## Tech Stack

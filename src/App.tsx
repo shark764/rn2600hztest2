@@ -1,30 +1,32 @@
 import React from 'react';
 import { StyleSheet, View, SafeAreaView, ScrollView } from 'react-native';
-import LibraryTest, { Button, TextInfo } from 'rn-library-test-aug17';
+import { Button, TextInfo } from '@2600hz/sds-react-native-components';
 import { Calls } from './modules/reporting/historical/Calls';
 
 export function App () {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    //   // eslint-disable-next-line @typescript-eslint/no-floating-promises
     runMultiply();
   }, []);
 
   const runMultiply = () => {
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    LibraryTest.multiply(3, 7).then(setResult);
+    //   // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    //   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    //   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    //   // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    // LibraryTest.multiply(3, 7).then(setResult);
+    setResult(3 * 7);
   };
 
   const runDivide = () => {
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-    LibraryTest.divide(3, 7).then(setResult);
+    //   // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    //   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    //   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    //   // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    // LibraryTest.divide(3, 7).then(setResult);
+    setResult(3 / 7);
   };
 
   return (
@@ -56,6 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 90,
+    padding: 10,
+    paddingTop: 90,
   },
 });
