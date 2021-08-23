@@ -31,7 +31,7 @@ module.exports = function (api) {
 
             // For development, we want to alias the library to the source
             // [pak.name]: path.join(__dirname, '..', pak.name, pak.source),
-            [pak.name]: path.join(__dirname, '..', dirName, pak.source),
+            // [pak.name]: path.join(__dirname, '..', dirName, pak.source),
           },
         },
       ],

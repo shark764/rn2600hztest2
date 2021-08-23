@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button, Dimensions, Slider, Text, View } from 'react-native';
 import Svg, { SvgXml, Circle, Defs, G, Rect, Use, Symbol, Path } from 'react-native-svg';
-import { Telicon } from '@2600hz/sds-react-native-components';
+import { Telicon } from '@dfhernandez/sds-react-native-components';
 import Icons from '@/components/icons/icons.svg';
 import DragonSvg from '@/components/icons/dragon.svg';
 import Autocode from '@/components/icons/logos/autocode.svg';
